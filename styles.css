@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #scale {
+    flex: 33%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #pattern {
+    flex: 33%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #progression {
+    margin-right: 50px;
+    margin-left: 50px;
+    flex: 33%;
+  }

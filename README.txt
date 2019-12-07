@@ -1,0 +1,1 @@
+A simple static website for my guitar practice.
