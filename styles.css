@@ -8,14 +8,14 @@
   flex: 50%;
   margin-left: 50px;
   margin-right: 50px;
-  min-width: 500px;
+  min-width: 400px;
 }
 
 #progression {
   margin-right: 50px;
   margin-left: 50px;
   flex: 50%;
-  min-width: 500px;
+  min-width: 400px;
 }
 
 body {
