@@ -4,20 +4,20 @@
     align-items: center;
   }
 
-  #scale {
-    flex: 33%;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+#pattern {
+  flex: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-width: 500px;
+}
 
-  #pattern {
-    flex: 33%;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+#progression {
+  margin-right: 50px;
+  margin-left: 50px;
+  flex: 50%;
+  min-width: 500px;
+}
 
-  #progression {
-    margin-right: 50px;
-    margin-left: 50px;
-    flex: 33%;
-  }
+body {
+  font-size: 1.6em;
+}

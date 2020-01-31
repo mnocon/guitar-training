@@ -1,5 +1,5 @@
 function setRandomKey(key) {
-    $("#randomScale").text(key);
+    $("#randomScale").text("Progression: " + key);
 }
 
 function setRandomStrumming(pattern1, pattern2) {
@@ -22,13 +22,22 @@ function setRandomStrumming(pattern1, pattern2) {
     $("#pattern_2_8").text(pattern2[7]);
 }
 
-function setRandomProgression(progression) {
-    $("#progression_1_1").text(progression[0]);
-    $("#progression_1_2").text(progression[1]);
-    $("#progression_1_3").text(progression[2]);
-    $("#progression_1_4").text(progression[3]);
-    $("#progression_2_1").text(progression[4]);
-    $("#progression_2_2").text(progression[5]);
-    $("#progression_2_3").text(progression[6]);
-    $("#progression_2_4").text(progression[7]);
+function setRandomProgression(progression, showNames) {
+
+    const fieldsMap = {
+        '#progression_1_1': 0,
+        '#progression_1_2': 1,
+        '#progression_1_3': 2,
+        '#progression_1_4': 3,
+        '#progression_2_1': 4,
+        '#progression_2_2': 5,
+        '#progression_2_3': 6,
+        '#progression_2_4': 7,
+    };
+
+
+    for (field in fieldsMap) {
+        text = showNames ? `${progression[fieldsMap[field]][0]} (${progression[fieldsMap[field]][1]})` : progression[fieldsMap[field]][0];
+        $(field).text(text);
+    }
 }

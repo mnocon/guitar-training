@@ -70,7 +70,7 @@ function getRandomProgression(key) {
         scaleDegreeNames = getKeys()[key];
         scaleDegreeName = scaleDegreeNames[scaleDegreeIndex];
 
-        progression.push(`${scaleDegree} (${scaleDegreeName})`);
+        progression.push([scaleDegree, scaleDegreeName]);
     }
 
     return progression;

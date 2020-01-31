@@ -7,5 +7,5 @@ $(document).ready(function () {
 
     setRandomKey(key);
     setRandomStrumming(pattern1, pattern2);
-    setRandomProgression(progression);
+    setRandomProgression(progression, true);
 });
